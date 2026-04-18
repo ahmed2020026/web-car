@@ -1,0 +1,7 @@
+@import "tailwindcss";
+.container{
+    @apply mx-auto p-2
+}
+.sectionPage{
+    min-height: calc(100vh - 80px);
+}
