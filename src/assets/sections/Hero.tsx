@@ -7,54 +7,56 @@ import { Search } from "lucide-react"
 import { assets } from "../SYSTEM/assets"
 
 const Hero = () => {
-    const [date, setDate] = useState('');
+    const [date, setDate] = useState('')
+
     return (
-        <>
-            <div className="container relative">
-                <div>
-                    <Head h1="Luxury cars on Rent" />
-                </div>
-                <div className="max-w-3xl grid grid-cols-1 sm:grid-cols-3 gap-3 items-start shadow-md p-4 bg-white mx-auto mt-10 rounded-2xl">
+            <div className="max-w-6xl mx-auto text-center space-y-8">
+
+                {/* Head */}
+                <Head
+                    h1="Luxury cars on Rent"
+                    p="Experience the best rental deals with premium cars at affordable prices."
+                />
+
+                {/* Form */}
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 bg-white shadow-lg p-4 rounded-2xl">
 
                     {/* Select */}
-                    <div className="w-full">
-                        <InputSelect
-                            father="Pickup Location"
-                            children={['New York', 'Los Angeles', 'Houston', 'Chicago']}
-                        />
-                    </div>
+                    <InputSelect
+                        father="Pickup Location"
+                        children={['New York', 'Los Angeles', 'Houston', 'Chicago']}
+                    />
 
                     {/* Date */}
-                    <div className="w-full">
+                    <div>
                         <FieldInput
                             type="date"
                             label="Pick-up Date"
                             onchange={(e) => setDate(e.target.value)}
                         />
-                        <p className={`${date ? 'text-gray-600' : 'text-gray-400'} px-3 py-1.5 text-sm`}>
+                        <p className={`${date ? 'text-gray-600' : 'text-gray-400'} text-left px-3 py-1 text-sm`}>
                             {date || 'Please Enter Date'}
                         </p>
                     </div>
 
                     {/* Button */}
-                    <div className="">
-                        <ButtonClick ClassName="w-full block bg-gray-800 hover:bg-gray-950 text-white">
-                            <Search />
-                            Search
-                        </ButtonClick>
-                    </div>
+                    <ButtonClick ClassName="w-full bg-gray-900 hover:bg-black text-white flex items-center justify-center gap-2">
+                        <Search size={18} />
+                        Search
+                    </ButtonClick>
 
                 </div>
 
-                <div className="w-full flex justify-center py-10 md:py-5">
+                {/* Image */}
+                <div className="flex justify-center">
                     <img
                         src={assets.main_car}
                         alt="main car"
-                        className="w-full max-w-3xl object-contain"
+                        className="w-full max-w-4xl object-contain"
                     />
                 </div>
+
             </div>
-        </>
     )
 }
 

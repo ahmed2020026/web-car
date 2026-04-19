@@ -16,7 +16,7 @@ export default function InputSelect({ father, children }: selectPropsType) {
                 <MenuButton className="w-full flex justify-between border border-gray-200 items-center gap-2 rounded-md px-3 py-1.5 text-sm/6 font-medium text-gray-700 data-focus:outline data-focus:outline-white  data-open:bg-gray-200 cursor-pointer">
                     {father} <ChevronDown size={15} />
                 </MenuButton>
-                <p className={` ${selected ? 'text-gray-600' : 'text-gray-400'} px-3 py-1.5 text-sm font-normal`}>{selected || 'Please Select location'}</p>
+                <p className={` ${selected ? 'text-gray-600' : 'text-gray-400'} px-3 py-1.5 text-sm font-normal text-left`}>{selected || 'Please Select location'}</p>
                 <MenuItems
                     transition
                     anchor="bottom end"
@@ -25,8 +25,8 @@ export default function InputSelect({ father, children }: selectPropsType) {
                     <MenuItem>
                         <ButtonClick onClick={() => setSelected('')} children={'none'} ClassName='w-full hover:text-gray-800' />
                     </MenuItem>
-                    {Array.from(children).map((item) => (
-                        <MenuItem>
+                    {Array.from(children).map((item , index) => (
+                        <MenuItem key={index}>
                             <ButtonClick onClick={() => setSelected(item)} children={item as string} ClassName='w-full hover:text-gray-800' />
                         </MenuItem>
                     ))}

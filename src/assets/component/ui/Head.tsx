@@ -1,15 +1,23 @@
 interface HeadPropsType {
     h1: string,
-    p?: string | null
+    p?: string | null,
+    textStyle?:string,
+    other?:string
 }
-const Head = ({ h1, p }: HeadPropsType) => {
+
+const Head = ({ h1, p,textStyle='sm:text-5xl',other }: HeadPropsType) => {
     return (
-        <>
-            <div>
-                <h1 className="font-semibold text-4xl sm:text-5xl text-center mt-13">{h1}</h1>
-                {p && <p>{p}</p>}
-            </div>
-        </>
+        <div className="text-center max-w-2xl mx-auto">
+            <h1 className={`font-bold text-3xl ${textStyle} text-gray-900 leading-tight ${other}`}>
+                {h1}
+            </h1>
+
+            {p && (
+                <p className="text-gray-500 text-sm sm:text-base leading-relaxed">
+                    {p}
+                </p>
+            )}
+        </div>
     )
 }
 
