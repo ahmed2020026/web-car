@@ -32,6 +32,7 @@ import calendar_icon_colored from "./calendar_icon_colored.svg"
 import location_icon_colored from "./location_icon_colored.svg"
 import testimonial_image_1 from "./testimonial_image_1.png"
 import testimonial_image_2 from "./testimonial_image_2.png"
+import testimonial_image_3 from "./user_profile.png"
 import main_car from "./main_car.png"
 import banner_car_image from "./banner_car_image.png"
 import user_profile from "./user_profile.png"
@@ -42,7 +43,24 @@ import car_image3 from "./car_image3.png"
 import car_image4 from "./car_image4.png"
 
 export const cityList = ['New York', 'Los Angeles', 'Houston', 'Chicago']
-
+export const testimonial = [
+    {
+        image:testimonial_image_1,
+        name:"Emma Rodriguez",
+        location:"Barcelona, Spain",
+        review:"I've rented cars from various companies, but the experience with CarRental was exceptional."
+    },{
+        image:testimonial_image_2,
+        name: "John Smith",
+        location:"New York, USA",
+        review:"CarRental made my trip so much easier. The car was delivered right to my door, and the customer service was fantastic!"
+    },{
+        image:testimonial_image_3,
+        name:"Michael Brown",
+        location:"Sydney, Australia",
+        review:"I highly recommend CarRental! Their fleet is amazing, and I always feel like I'm getting the best deal with excellent service."
+    }
+]
 export const assets = {
     logo,
     gmail_logo,

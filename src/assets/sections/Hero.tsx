@@ -10,7 +10,7 @@ const Hero = () => {
     const [date, setDate] = useState('')
 
     return (
-            <div className="max-w-6xl mx-auto text-center space-y-8">
+            <div className="max-w-6xl mx-auto text-center space-y-8 p-2">
 
                 {/* Head */}
                 <Head
