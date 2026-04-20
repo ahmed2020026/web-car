@@ -11,7 +11,6 @@ import Footer from "./assets/sections/Footer"
 import Spinner from "./assets/component/ui/Spinner"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import useScrollTop from "./assets/hooks/useScrollTop"
 
 const App = () => {
   AOS.init({
