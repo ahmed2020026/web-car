@@ -22,7 +22,7 @@ const Car = () => {
                     <div className="lg:col-span-2 p-2">
                         <div className="shadow bg-white rounded p-5">
                             <div>
-                                <img src={car?.image} className="w-full h-auto md:max-h-100 object-cover rounded mb-6 shadow-md border border-white" />
+                                <img src={car?.image} data-aos='fade' className="w-full h-auto md:max-h-100 object-cover rounded mb-6 shadow-md border border-white" />
                             </div>
                             <div className="mb-3">
                                 <h2 className="text-2xl font-medium">{car?.brand} {car?.model}</h2>

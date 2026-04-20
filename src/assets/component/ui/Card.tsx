@@ -25,7 +25,7 @@ const Card = ({ product }: { product: CarType }) => {
                 <h2 className="text-xl font-medium">{product.brand} {product.model}</h2>
                 <p className="text-sm font-normal">{product.category} - {product.year}</p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-3">
+            <div className="grid grid-cols-2 gap-3 pt-3">
 
                 <div className="flex items-center gap-2 text-sm text-gray-600">
                     <UsersRound size={18} />
