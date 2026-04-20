@@ -19,7 +19,7 @@ const Hero = () => {
                 />
 
                 {/* Form */}
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 bg-white shadow-lg p-4 rounded-2xl">
+                <div data-aos={'fade-up'} className="grid grid-cols-1 sm:grid-cols-3 gap-4 bg-white shadow-lg p-4 rounded-2xl">
 
                     {/* Select */}
                     <InputSelect
@@ -48,7 +48,7 @@ const Hero = () => {
                 </div>
 
                 {/* Image */}
-                <div className="flex justify-center">
+                <div className="flex justify-center" data-aos="zoom-in">
                     <img
                         src={assets.main_car}
                         alt="main car"

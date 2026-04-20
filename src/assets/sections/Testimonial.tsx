@@ -10,7 +10,7 @@ const Testimonial = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
                 {
                     testimonial.map((pers, index) => (
-                        <div key={index} className="bg-white p-5 rounded-md shadow-xl hover:shadow-none hover:-translate-y-2.5 duration-500">
+                        <div key={index} data-aos='zoom-in' className="bg-white p-5 rounded-md shadow-xl hover:shadow-none hover:-translate-y-2.5 duration-500">
                             <div className="flex justify-start items-start gap-3 mb-3">
                                 <img src={pers.image} alt={pers.name} className="block w-15 rounded-full h-15 shrink-0" />
                                 <div className="">

@@ -14,6 +14,8 @@ export default function FieldInput({ type, label,onchange , padding,placeHolder 
         <>
             <Field>
                 <Input
+                    name={label}
+                    aria-label={label}
                     type={type as string}
                     placeholder={placeHolder || label as string}
                     autoComplete='off'

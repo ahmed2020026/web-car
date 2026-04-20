@@ -7,7 +7,7 @@ interface HeadPropsType {
 
 const Head = ({ h1, p,textStyle='sm:text-5xl',other }: HeadPropsType) => {
     return (
-        <div className="text-center max-w-2xl mx-auto">
+        <div className="text-center max-w-2xl mx-auto" data-aos={'fade-down'}>
             <h2 className={`font-semibold text-3xl ${textStyle} text-gray-900 leading-tight ${other}`}>
                 {h1}
             </h2>
